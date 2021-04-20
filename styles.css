@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  background-image: url(bg_pic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fact-container {
+  max-width: 27rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 3rem 1.5rem;
+  box-shadow: 0px 3px 1px rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  color: #262323;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  color: rgba(15, 14, 15, 0.6);
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 1.8rem 1.5rem;
+}
+
+button {
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  box-shadow: 1px 4px 1px #f12e3e;
+  color: #fff;
+  background: linear-gradient(#e84898, #ff3344);
+}
+
+button:hover {
+  background: linear-gradient(#ef1180, #fc2133);
+  box-shadow: 1px 4px 1px #e02332;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: translate(2px, 3px);
+  box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.7);
+  transition: 100ms ease-in;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 1rem 1.4rem;
+  }
+
+  button {
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    box-shadow: 1px 4px 1px #f12e3e;
+    color: #fff;
+    background: linear-gradient(#e84898, #ff3344);
+  }
+}
+
+@media (max-width: 410px) {
+  .fact-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    margin: 0.8rem 0;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    box-shadow: 1px 4px 1px #f12e3e;
+    color: #fff;
+    background: linear-gradient(#e84898, #ff3344);
+  }
+}
+
+body video {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
